@@ -1,17 +1,15 @@
 pipeline{
-agent any
+     agent any
 
-parameters{
-  string(name: 'NAME', description: 'Hello', defaultValue: 'Hanuman')
-
-stages{
-stage('greetings'){
- steps{
-   echo "Good Afternoon ${params.NAME}"
- }
-}
+     parameters{
+          string(name: 'NAME', description: 'Hello', defaultValue: 'Hanuman')
+               }
+   stages{
+      stage('greetings'){
+           steps{
+                echo "Good Afternoon ${params.NAME}"
+                }
+          }
   
-}
-
- }
+        }
 }

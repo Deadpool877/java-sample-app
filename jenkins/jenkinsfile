@@ -7,7 +7,7 @@ parameters{
 stages{
 stage('greetings'){
  steps{
-   echo "Good Afternoon"
+   echo "Good Afternoon ${params.NAME}"
  }
 }
   
